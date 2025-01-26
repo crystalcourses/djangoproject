@@ -135,4 +135,4 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CART_SESSION_ID = 'cart'
 
-AUTH_USER_MODEL = 'user.User'
+AUTH_USER_MODEL = 'users.User'
