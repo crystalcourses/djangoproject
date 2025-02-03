@@ -41,6 +41,7 @@
                 </div>
                 <p><input type="submit" value="Place Order"></p>
                 {% csrf_token %}
+                <img src="img/checkk.png" class="checkk" alt="">
             </form>
         </div>
         <div class="checkout">
@@ -49,7 +50,7 @@
                 {% for item in cart  %}
                     <li>
                         {{ item.quantity }} * {{ item.product.name }}
-                        <p>$ {{ item.total_price }}</p>
+                        <p>$ {{ item.price }}</p>
                     </li>
                     <p>Total: $ {{ cart.get_total_price }}</p>
                 {% endfor %}
