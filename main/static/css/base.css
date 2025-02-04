@@ -836,3 +836,441 @@ input:focus {
     margin-left: 20px;
     margin-top: 30px;
 }
+
+@media (max-width: 414px) {
+    .add-to-cart-btn{
+        font-size: 14px;
+    }
+    .detail-img {
+        display:flex;
+    }
+    .image-nav {
+        display:none;
+    }
+    .detail-image {
+        width: 350px;
+        height: 400px;
+    }
+    .qform {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .login {
+        overflow-x: hidden;
+        width:335px;
+
+        /* margin-top: 30px; */
+    }
+    .reset-pass {
+        margin-left: 25px;
+    }
+    .main {
+        width: 300px;
+    }
+    /* Ваши оригинальные стили */
+    .header-profile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* Новые стили для страницы list.html */
+    .llist {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .main-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 10px;
+    }
+
+    .home-card {
+        width: 140px;
+        height: auto;
+    }
+
+    .card-img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .title-card {
+        font-size: 14px;
+    }
+
+    .price, .line {
+        font-size: 14px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .pagination li a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+}
+
+/* Мобильные устройства (≤ 768px) */
+@media (max-width: 768px) {
+    .detail-img {
+        display:flex;
+    }
+    .image-nav {
+        display:none;
+    }
+    .detail-image {
+        width: 350px;
+        height: 400px;
+    }
+    .qform {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    /* Ваши оригинальные стили */
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    .header-container {
+        align-items: center;
+    }
+
+    .header-profile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .header-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-cardss {
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-description {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .sidebar {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        max-width:414px;
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        margin-bottom: 15px;
+    }
+
+    .home {
+        font-size: 30px;
+    }
+
+    .heavy-logo {
+        position: static;
+    }
+
+    .grobb {
+        display: none;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .container {
+        font-size: 16px;
+    }
+
+    .home-btn {
+        font-size: 16px;
+    }
+
+    .rec-title span {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .cart-discount {
+        font-size: 16px;
+        flex-direction: column-reverse;
+    }
+
+    .home-title {
+        margin-top: 50px;
+    }
+
+    .mainvl {
+        display: none;
+    }
+    .pagination {
+        position: unset;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+    }
+    /* Новые стили для страницы list.html */
+    .llist {
+        margin: 0 auto;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .main-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+
+    .home-card {
+        width: 180px;
+    }
+
+    .card-img {
+        width: 160px;
+        height: 200px;
+    }
+
+    .title-card {
+        font-size: 16px;
+        min-height: 60px;
+    }
+
+    .price, .line {
+        font-size: 16px;
+    }
+
+    .pagination {
+        gap: 10px;
+    }
+
+    .pagination li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+/* Планшеты (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .image-nav {
+        display:none;
+    }
+    /* Ваши оригинальные стили */
+    .home-cardss {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .heavy-logo {
+        margin-right: 22px;
+        position: unset;
+    }
+
+    .grobb {
+        display: none;
+    }
+
+    .detail-product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    /* Новые стили для страницы list.html */
+    .llist {
+        margin:0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .home-card {
+        width: 230px;
+        height: 360px;
+    }
+
+    .card-img {
+        min-height: 220px;
+        max-height: 220px;
+    }
+
+    .title-card {
+        font-size: 18px;
+    }
+
+    .price, .line {
+        font-size: 18px;
+    }
+
+    .mainvl {
+        display:none;
+    }
+    .main {
+        width: 500px;
+        margin: 0;
+    }
+
+    .sidebar {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .pagination {
+        position: unset;
+    }
+    .cart-discount {
+        flex-direction: column-reverse;
+        margin-top: -10px;
+    }
+    .price {
+        margin:0px;
+    }
+}
+
+/* Ноутбуки (1025px – 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .prev-btn {
+        display:none;
+    }
+    /* Ваши оригинальные стили */
+    .home-cardss {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .home-cardss {
+        margin-bottom: 50px;
+    }
+
+    .heavy-logo {
+        margin-right: 30px;
+        position: unset;
+    }
+
+    /* Новые стили для страницы list.html */
+    .llist {
+        margin: 0;
+        overflow-x: hidden;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    .home-card {
+        width: 250px;
+        height: 398px;
+    }
+
+    .card-img {
+        width: 220px;
+        height: 280px;
+    }
+
+    .title-card {
+        font-size: 20px;
+    }
+
+    .price, .line {
+        font-size: 20px;
+    }
+    .main {
+        width: 800px;
+        margin-left: 0px;
+    }
+    .mainvl {
+        display: none;
+    }
+    .sidebar {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grobb {
+        display: none;
+    }
+    .pagination {
+        margin-top: 30px;
+        position: unset;
+    }
+}
+
+@media (min-width:1441px) and (max-width:1740px) {
+    .main {
+        margin-left: 70px;
+    }
+    .llist {
+        margin-left: 20px;
+    }
+}

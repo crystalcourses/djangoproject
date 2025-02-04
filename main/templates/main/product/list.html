@@ -43,7 +43,7 @@
                 </div>
                 <ul class="pagination">
                     <li class="{% if not products.has_previous %}disabled{% endif %}">
-                        <a href="{% if products.has_previous %}?page={{ products.previous_page_number }}{% endif %}">Previous</a>
+                        <a href="{% if products.has_previous %}?page={{ products.previous_page_number }}{% endif %}">Prev</a>
                     </li>
                     {% for page in products.paginator.page_range  %}
                         {% if page >= products.number|add:-2 and page <= products.number|add:2 %}

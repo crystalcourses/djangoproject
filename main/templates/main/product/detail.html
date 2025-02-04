@@ -23,24 +23,56 @@
             const prevBtn = document.querySelector('.prev-btn');
             const nextBtn = document.querySelector('.next-btn');
             let currentindex = 0;
-
+        
             images[currentindex].style.display = 'block';
-
+        
             if (images.length === 1) {
                 prevBtn.style.display = 'none';
                 nextBtn.style.display = 'none';
             } else {
+                // Обработка кнопок для больших экранов
                 prevBtn.addEventListener('click', () => {
                     images[currentindex].style.display = 'none';
                     currentindex = (currentindex - 1 + images.length) % images.length;
                     images[currentindex].style.display = 'block';
                 });
-
+        
                 nextBtn.addEventListener('click', () => {
                     images[currentindex].style.display = 'none';
                     currentindex = (currentindex + 1) % images.length;
                     images[currentindex].style.display = 'block';
                 });
+        
+                // Обработка свайпов для мобильных устройств
+                let touchStartX = 0;
+                let touchEndX = 0;
+        
+                const handleTouchStart = (event) => {
+                    touchStartX = event.touches[0].clientX;
+                };
+        
+                const handleTouchMove = (event) => {
+                    touchEndX = event.touches[0].clientX;
+                };
+        
+                const handleTouchEnd = () => {
+                    if (touchEndX < touchStartX) {
+                        // Свайп влево
+                        images[currentindex].style.display = 'none';
+                        currentindex = (currentindex + 1) % images.length;
+                        images[currentindex].style.display = 'block';
+                    } else if (touchEndX > touchStartX) {
+                        // Свайп вправо
+                        images[currentindex].style.display = 'none';
+                        currentindex = (currentindex - 1 + images.length) % images.length;
+                        images[currentindex].style.display = 'block';
+                    }
+                };
+        
+                const detailImg = document.querySelector('.detail-img');
+                detailImg.addEventListener('touchstart', handleTouchStart, false);
+                detailImg.addEventListener('touchmove', handleTouchMove, false);
+                detailImg.addEventListener('touchend', handleTouchEnd, false);
             }
         </script>
 
